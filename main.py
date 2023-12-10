@@ -18,10 +18,12 @@ if __name__ == "__main__":
 
 @app.route("/", methods=['GET'])
 def root():
+    """GET: Renders the main.html file for the game User Interface."""
     return render_template("main.html", player_board=player_board)
 
 @app.route("/placement", methods=['GET', 'POST'])
 def placement_interface():
+    """POST: Sends placement data to root, GET: Renders the placement.html file for user placement"""
     if request.method == 'POST':
         data = request.get_json()
         with open("placement.json", mode="w") as json_file:
@@ -33,7 +35,7 @@ def placement_interface():
 
 @app.route("/attack", methods=['GET'])
 def process_attack():
-
+    """Game logic for playing against AI opponent."""
     while True:
         x = int(request.args.get('x'))
         y = int(request.args.get('y'))

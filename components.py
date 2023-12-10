@@ -113,7 +113,7 @@ def place_battleships(board, ships, algorithm = "simple"):
                 elif orientation == "v":
                     for i in range(ship_size):
                         board[y + i][x] = ship
-
+                        
         except FileNotFoundError:
             print(f"The file 'placement.json' was not found.")
         except IndexError:
@@ -121,3 +121,5 @@ def place_battleships(board, ships, algorithm = "simple"):
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
             logging.error('An error occurred: %s', str(e))
+    
+    return board

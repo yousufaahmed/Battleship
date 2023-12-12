@@ -1,14 +1,23 @@
-
+# MODIFY WITH NEW CONTENT
 # BATTLESHIP GAME
 
 # INTRODUCTION
 
-This is a Python with Flask implementation for the Battleship game. Players can place their ships on a board, and can play against an AI
-opponent (or multiplayer in a future iteration), taking turns to sink eachothers ships until one or the other sinka all ships, declaring 
-one side the winner!
+This is a Python implementation of the Battleship game, with a Flask UI. 
+
+# DESCRIPTION
+
+Players can place their ships on a board, and can play against an AI opponent (or multiplayer in a future iteration), 
+taking turns to sink eachothers ships until one or the other sinka all ships, declaring one side the winner!
+
+There are 3 different versions of the game. One is a simple version, where you can attack ships on a predetermined board, 
+giving coordinates in the terminal. The second is with an AI opponent, which can attack your board and you aim to destroy 
+all the opponents ships before it destroys yours, which is also in the terminal. The third is the main game which can be played
+on the browser against the AI opponent.
 
 ## Prerequisites
 
+To install Battleship, you will need to have python installed. Download python [here](https://www.python.org/downloads/)
 - Python 3.7 or higher
 
 ## Installation

@@ -1,6 +1,8 @@
 import components
 import logging
 
+# game_ended = False
+
 def attack(coordinates, board, ships):
     """Takes coords and attacks ships, returning true if hit (removing ship from coords), and returning false if no hit."""
 
@@ -66,6 +68,7 @@ def simple_game_loop():
         elif fire == False:
             print("Miss!")
         
+    # game_ended = True
     print("You sunk all the ships. YOU WIN!")
 
 def print_board(board):

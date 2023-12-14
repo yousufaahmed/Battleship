@@ -13,9 +13,6 @@ ai_board = components.initialise_board()
 ai_ships = components.create_battleships()
 components.place_battleships(ai_board, ai_ships, "random")
 
-if __name__ == "__main__":
-    app.run()
-
 @app.route("/", methods=['GET'])
 def root():
     """GET: Renders the main.html file for the game User Interface."""
@@ -58,6 +55,8 @@ def process_attack():
     else:
         return jsonify({'hit': fire_player,'AI_Turn': ai_coords})
 
+if __name__ == "__main__":
+    app.run()
 
     
 

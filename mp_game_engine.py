@@ -4,8 +4,6 @@ from game_engine import cli_coordinates_input, attack, print_board
 
 players = {}
 picked_coords=[]      # COORDINATES WHICH HAVE ALREADY BEEN PICKED BY THE AI SO IT DOESNT REPEAT THEM
-# hit_arr=[]          # ARRAY WHICH IS ADDED A 0 OR 1 BASED ON IF AN ATTACK WAS A HIT OR NOT BY THE AI
-# prev_direction = [] # DIRECTION IN WHICH THE AI RANDOMLY PICKED TO ATTACK TOWARDS BASED ON IF THE PREVIOUS COORDS WERE A HIT
 
 def generate_attack(board): # CHANGE TO HAVE REAL AI
     """Generates coordinates via an AI to attack players ship."""
@@ -53,10 +51,8 @@ def ai_opponent_game_loop():
         fire_ai = attack(ai_coords, player_board, player_ships)
 
         if fire_ai:
-            # hit_arr.append(1) # FOR THE AI
             print("AI Hit!")
         elif fire_ai == False:
-            # hit_arr.append(0)
             print("AI Missed!")
 
         print_board(player_board)

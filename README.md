@@ -92,3 +92,4 @@ $ pytest
 * **Authors:** Yousuf Ahmed [Linkedin](https://www.linkedin.com/in/yousufaahmed/)
 * **License:** This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 * **Source:** [GitHub Repository](https://github.com/yousufaahmed/Battleship)
+* **PyPi Package:** [PyPi](https://pypi.org/project/Battleship-yousufaa/0.0.1/)

@@ -330,7 +330,7 @@ def test_generate_attack_exists():
     except AssertionError:
         testReport.add_message("generate_attack function does not exist in your solution.")
         pytest.fail("generate_attack function does not exist")
-
+ 
 
 @pytest.mark.depends(on=["test_mp_game_engine_exists"])
 def test_generate_attack_return_type():
@@ -338,8 +338,10 @@ def test_generate_attack_return_type():
     Test if the generate_attack function returns a tuple.
     """
     try:
+        components = importlib.import_module('components')
+        user_board = components.initialise_board(10)
         mp_game_engine = importlib.import_module('mp_game_engine')
-        assert isinstance(mp_game_engine.generate_attack(), tuple)
+        assert isinstance(mp_game_engine.generate_attack(user_board), tuple)
     except AssertionError:
         testReport.add_message("generate_attack function does not return a tuple")
         pytest.fail("generate_attack function does not return a tuple")

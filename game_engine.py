@@ -69,6 +69,7 @@ def simple_game_loop():
     print("You sunk all the ships. YOU WIN!")
 
 def print_board(board):
+    """Prints the game board using ASCII"""
     for row in board:
         print(" ".join(cell if cell is not None else "-" for cell in row))
 

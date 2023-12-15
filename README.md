@@ -9,6 +9,7 @@
 * [Getting started](#Getting-started)
 * [Testing](#Testing)
 * [Details](#Details)
+* [PyPi Package](#Pypi-Package)
 
 ## Introduction
 
@@ -87,6 +88,16 @@ $ python -m pytest
 ```
 $ pytest
 ```
+
+## PyPi Package
+
+This game has been uploaded to Pypi and can be downloaded through pip as a module.
+
+To do so, use this command in the terminal/ command prompt:
+```
+$ python3 -m pip install battleship-yousufaa
+```
+
 ## Details
 
 * **Authors:** Yousuf Ahmed [Linkedin](https://www.linkedin.com/in/yousufaahmed/)

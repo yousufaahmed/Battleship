@@ -1,1 +1,1 @@
-{"Aircraft_Carrier": ["3", "1", "h"], "Battleship": ["3", "4", "h"], "Cruiser": ["1", "5", "h"], "Destroyer": ["6", "6", "h"], "Submarine": ["3", "8", "h"]}
+{"Aircraft_Carrier": ["1", "1", "h"], "Battleship": ["0", "2", "v"], "Cruiser": ["1", "6", "h"], "Destroyer": ["3", "4", "h"], "Submarine": ["5", "4", "v"]}
